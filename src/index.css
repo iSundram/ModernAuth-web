@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  /* Typography */
+  --font-sans: 'JetBrains Mono', monospace;
+  --font-heading: 'Space Grotesk', sans-serif;
+
+  /* Core Palette */
+  --color-background: #ffffff;
+  --color-foreground: #2b2b2b;
+  --color-muted: #b3b3b3;
+  --color-border: #d4d4d4;
+  
+  /* Primary Actions */
+  --color-primary: #2b2b2b;
+  --color-primary-foreground: #ffffff;
+  
+  /* Secondary/Subtle */
+  --color-secondary: #d4d4d4;
+  --color-secondary-foreground: #2b2b2b;
+
+  /* Semantic */
+  --color-success: #10b981;
+  --color-error: #ef4444;
+
+  /* Sophisticated Shadows */
+  --shadow-premium: 0 1px 2px 0 rgb(0 0 0 / 0.05), 0 4px 6px -1px rgb(0 0 0 / 0.02), 0 10px 15px -3px rgb(0 0 0 / 0.03);
+  --shadow-premium-hover: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+  
+  /* Radii */
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1.25rem;
+  --radius-3xl: 2rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased overflow-x-hidden;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4 {
+    @apply tracking-tighter font-black;
+    font-family: var(--font-heading);
+    line-height: 1.1;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/40 backdrop-blur-md border border-white/20 shadow-sm;
+  }
+
+  .glass-dark {
+    @apply bg-slate-900/40 backdrop-blur-md border border-white/5 shadow-2xl;
+  }
+  
+  .mesh-grid {
+    background-image: radial-gradient(color-mix(in srgb, var(--color-border), transparent 60%) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-foreground to-primary;
+  }
+
+  .section-spacing {
+    @apply py-24 md:py-40;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 md:px-12;
+  }
+
+  .container-tight {
+    @apply max-w-4xl mx-auto px-6;
+  }
+}

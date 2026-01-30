@@ -49,7 +49,7 @@ const detailedFeatures = [
 
 export function FeatureShowcase() {
   return (
-    <section className="section-spacing bg-white">
+    <section className="section-spacing bg-white overflow-hidden">
       <div className="container-custom">
         <div className="space-y-32">
           {detailedFeatures.map((feature, i) => (

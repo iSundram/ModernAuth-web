@@ -12,7 +12,7 @@ export function About() {
       exit="exit"
       className="pt-32"
     >
-      <section className="section-spacing">
+      <section className="section-spacing overflow-hidden">
         <div className="container-tight">
           <motion.div variants={fadeInUp} className="text-center mb-24">
             <span className="text-primary text-xs font-black uppercase tracking-[0.4em] mb-4 block">Our Vision</span>

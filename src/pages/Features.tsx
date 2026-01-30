@@ -11,7 +11,7 @@ export function FeaturesPage() {
       exit="exit"
       className="pt-32"
     >
-      <section className="bg-secondary/30 py-20">
+      <section className="bg-secondary/30 py-20 overflow-hidden">
         <div className="container-custom">
           <motion.div variants={fadeInUp} className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-8">

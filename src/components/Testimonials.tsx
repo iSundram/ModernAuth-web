@@ -22,7 +22,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="section-spacing bg-white">
+    <section id="testimonials" className="section-spacing bg-white overflow-hidden">
       <div className="container-custom">
         <motion.div 
           className="max-w-3xl mb-24"

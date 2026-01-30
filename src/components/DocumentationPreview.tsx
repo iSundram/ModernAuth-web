@@ -42,7 +42,7 @@ export function DocumentationPreview() {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
 
   return (
-    <section className="section-spacing bg-white">
+    <section className="section-spacing bg-white overflow-hidden">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div 

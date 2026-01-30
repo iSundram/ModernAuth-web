@@ -26,7 +26,7 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="section-spacing bg-white">
+    <section className="section-spacing bg-white overflow-hidden">
       <div className="container-tight">
         <motion.div 
           className="text-center mb-24"

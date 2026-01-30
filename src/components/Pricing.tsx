@@ -30,7 +30,7 @@ const pricingTiers = [
 
 export function Pricing() {
   return (
-    <section id="pricing" className="section-spacing bg-secondary/50 mesh-grid">
+    <section id="pricing" className="section-spacing bg-secondary/50 mesh-grid overflow-hidden">
       <div className="container-custom">
         <motion.div 
           className="text-center max-w-3xl mx-auto mb-24"

@@ -18,7 +18,7 @@ const features = [
 
 export function Features() {
   return (
-    <section id="features" className="section-spacing bg-white">
+    <section id="features" className="section-spacing bg-white overflow-hidden">
       <div className="container-custom">
         <motion.div 
           className="max-w-3xl mb-24"

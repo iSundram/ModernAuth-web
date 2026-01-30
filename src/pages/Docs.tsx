@@ -9,7 +9,7 @@ export function Docs() {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="pt-32 pb-20 min-h-screen"
+      className="pt-32 pb-20 min-h-screen overflow-hidden"
     >
       <div className="container-custom grid lg:grid-cols-[280px_1fr] gap-12">
         {/* Sidebar */}

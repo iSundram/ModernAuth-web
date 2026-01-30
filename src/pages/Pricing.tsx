@@ -11,7 +11,7 @@ export function PricingPage() {
       exit="exit"
       className="pt-32 min-h-screen"
     >
-      <section className="pb-20">
+      <section className="pb-20 overflow-hidden">
         <div className="container-custom">
           <motion.div variants={fadeInUp} className="text-center max-w-3xl mx-auto mb-20">
             <span className="text-primary text-xs font-black uppercase tracking-[0.4em] mb-4 block">Transparent Pricing</span>

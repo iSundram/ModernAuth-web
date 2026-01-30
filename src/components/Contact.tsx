@@ -6,7 +6,7 @@ import { fadeInUp, staggerContainer, staggerItem } from '../animations/variants'
 
 export function Contact() {
   return (
-    <section id="contact" className="section-spacing bg-white">
+    <section id="contact" className="section-spacing bg-white overflow-hidden">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           

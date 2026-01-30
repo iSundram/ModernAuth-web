@@ -38,7 +38,7 @@ function AppContent() {
   const isAuthPage = location.pathname === '/login';
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col overflow-x-hidden">
       <ScrollToTop />
       {!isAuthPage && <Navigation onCtaClick={() => setIsModalOpen(true)} />}
 
